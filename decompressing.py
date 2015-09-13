@@ -2,6 +2,9 @@
 
 import argparse
 
+def s_decompress(x):
+    print("I'm in decompress!")
+
 if __name__ == "__main__": 
     print("I'm in main!")
     parser = argparse.ArgumentParser(description='Decompressing has never been easier!')
