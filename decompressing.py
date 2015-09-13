@@ -1,16 +1,21 @@
 # Minimal code to decompress.
 # 1st -> main
-# 2nd ->s_decompress
+# 2nd -> s_decompress
+# 3rd -> sort
 
 import argparse
+import numpy
+
+def r_sort(lst):
+    print("I'm in sort!")
+    """Return a clone of the list in sorted order."""
+    clone = lst[:]
+    return sorted(clone)
 
 def matdiv(c, b):
     return numpy.divide(c, b)
 
 def s_decompress(x):
-    print("I'm in decompress!")
-    
-    def s_decompress(x):
     print("I'm in decompress!")
     version, x = int(x[:3]), x[3:]
     head, body, foot, ignore = x.split('\n')
