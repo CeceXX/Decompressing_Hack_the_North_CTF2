@@ -1,4 +1,4 @@
-# Minimal code to decompress. No fluff. 
+# Minimal code to decompress.
 
 import argparse
 
