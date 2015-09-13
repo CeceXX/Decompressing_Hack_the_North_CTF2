@@ -8,4 +8,8 @@ if __name__ == "__main__":
     parser.add_argument('--decompress', dest='compress', action='store_const',
                        const=False, default=True)
     args = parser.parse_args()
+    if args.compress:
+        with open('file.fc') as f:
+            with open('file', 'w') as k:
+                k.write(s_decompress(f.read()))
 
