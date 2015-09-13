@@ -1,3 +1,5 @@
+# Minimal code to decompress. No fluff. 
+
 import argparse
 
 if __name__ == "__main__": 
